@@ -1,0 +1,16 @@
+{
+  "school": "Интукод",
+  "location": "Чеченская Республика",
+  "groups": [
+    {
+      "title": "Go Начало",
+      "students": 12,
+      "remote": false
+    },
+    {
+      "title": "Go Продвинутый",
+      "students": 9,
+      "remote": true
+    }
+  ]
+}

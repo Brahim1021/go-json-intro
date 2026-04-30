@@ -1,0 +1,10 @@
+
+{
+    "name": "Ibra",
+    "city": "Grozny",
+    "items": [
+        "first",
+        "second"
+    ],
+    "openNow": true
+}
