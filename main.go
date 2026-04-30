@@ -7,11 +7,6 @@ import (
 	// "os" // Импортируем пакет для работы с ОС
 )
 
-// type Human struct {
-// 	Name   string
-// 	Age    int
-// 	Gender string
-// }
 
 //type Создай файл coffee.json и накидай в нём пример JSON данных, которые будут соответствовать следующей структуре:
 
@@ -21,7 +16,7 @@ type CoffeeShop struct {
 	Items   []string `json:"items"`
 	OpenNow bool     `json:"open_now"`
 }
-
+////ЗАДАНИЕ 1
 type Group struct {
 	Title    string `json:"title"`
 	Students int    `json:"students"`
@@ -63,6 +58,11 @@ type Meetup struct {
 
 func main() {
 	
+	
+
+
+
+
 	workDay := WorkDay{
 		Title:    "Первый день в интукод",
 		City:     "Грозный",
@@ -82,7 +82,9 @@ func main() {
 	}
 
 	fmt.Println(string(jsonBytes))
-
+	
+	
+	//////ЗАДАНИЕ 3
 	studentJSON := `{
 	"first_name": "Иса",
 	"last_name": "Исаев",
@@ -102,7 +104,7 @@ func main() {
 		fmt.Println("Слишком маленький возраст")
 	}
 	
-	//////////задание 4
+	//////////ЗАДАНИЕ 4
 	data := []byte(`{"topic":"Введение в JSON","minutes":45}`)
 	var l Lesson
 	fmt.Println(l)
@@ -111,7 +113,7 @@ func main() {
 	fmt.Println("\nОшибка:", err)
 	fmt.Printf("Результат: %+v\n", l)
 
-	///////////////задание 5
+	////////ЗАДАНИЕ 5
 	newData := []byte(`{ "title": "Разбор задач", "minutes": "60" }`)
 	var d Meetup
 	errData := json.Unmarshal(newData, &d)
