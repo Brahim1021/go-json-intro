@@ -61,7 +61,7 @@ func main() {
 	
 
 
-
+	////ЗАДАНИЕ 2
 
 	workDay := WorkDay{
 		Title:    "Первый день в интукод",
